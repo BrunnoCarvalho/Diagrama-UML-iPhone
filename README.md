@@ -5,27 +5,54 @@ Modelagem e diagramação de um componente iPhone
 
 ```mermaid
 classDiagram
+
     class ReprodutorMusical {
-        +exemploMetodo1()
-        +exemploMetodo2(String exemplo)
+        <<interface>>
+        + tocar()
+        + pausar()
+        + selecionarMusica(String musica)
     }
-
+    iPhone ..> ReprodutorMusical 
+    
     class AparelhoTelefonico {
-        +exemploMetodo1()
-        +exemploMetodo2(String exemplo)
+        <<interface>>
+        + ligar(String numero) 
+        + atender() 
+        + iniciarCorreioVoz()
     }
+    iPhone ..> AparelhoTelefonico 
 
-    class NavegadorInternet {
-        +exemploMetodo1()
-        +exemploMetodo2(String exemplo)
+    class NavegadorInternet{
+        <<interface>>
+        + exibirPagina(String url) 
+        + adicionarNovaAba()
+        + atualizarPagina()
     }
+    iPhone ..> NavegadorInternet
+
+    class GoogleChrome{
+
+    }
+    NavegadorInternet <.. GoogleChrome
 
     class iPhone {
+
     }
 
-    iPhone --> ReprodutorMusical
-    iPhone --> AparelhoTelefonico
-    iPhone --> NavegadorInternet
+    class iPod{
+
+    }
+    ReprodutorMusical <.. iPod
+
+    class BlackBerry8800{
+
+    }
+    AparelhoTelefonico <..BlackBerry8800
+    
+
+    style ReprodutorMusical fill:#9ff,stroke:#369,stroke-width:2px,color:#000,stroke-dasharray: 5 5
+    style AparelhoTelefonico fill:#9ff,stroke:#369,stroke-width:2px,color:#000,stroke-dasharray: 5 5
+    style NavegadorInternet fill:#9ff,stroke:#369,stroke-width:2px,color:#000,stroke-dasharray: 5 5
 ```
 
 ## Habilidades 💻
