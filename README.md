@@ -1,6 +1,6 @@
 # Modelagem e Diagramação de um Componente iPhone
 
-# Descrição
+## Descrição
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![UML](https://img.shields.io/badge/UML-FABD14.svg?style=for-the-badge&logo=UML&logoColor=black)
 
 Este repositório contém o diagrama UML do componente iPhone e o código em Java para as classes e interfaces apresentadas.
@@ -8,7 +8,7 @@ Este repositório contém o diagrama UML do componente iPhone e o código em Jav
 Através do diagrama UML mapeamos a estrutura do sistema do iPhone. Esse dispositivo contém funcionalidades do reprodutor musical, aparelho telefônico e navegador de internet.
 
 
-# Diagrama UML
+## Diagrama UML
 
 ```mermaid
 classDiagram
@@ -62,7 +62,7 @@ classDiagram
     style NavegadorInternet fill:#9ff,stroke:#369,stroke-width:2px,color:#000,stroke-dasharray: 5 5
 ```
 
-# Classes e interfaces
+## Classes e interfaces
 
 ### iPhone (classe):
 
